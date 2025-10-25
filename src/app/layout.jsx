@@ -1,8 +1,9 @@
 'use client';
 
-import '../styles/globals.scss';
-import { Provider } from '../components/ui/Provider';
-import { ClientOnly } from '../components/ui/HydrationGuard';
+import '@/styles/globals.scss';
+import { Provider } from '@/components/ui/Provider';
+import { ClientOnly } from '@/components/ui/HydrationGuard';
+import { Header } from '@/components/commom/header';
 
 export const dynamic = 'force-dynamic';
 
@@ -11,7 +12,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <ClientOnly>
-          <Provider>{children}</Provider>
+          <Provider>
+            <Header />
+            {children}
+          </Provider>
         </ClientOnly>
       </body>
     </html>
