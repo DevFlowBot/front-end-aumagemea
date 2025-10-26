@@ -24,7 +24,7 @@ export function Header() {
           <Image
             src="/logo.png"
             alt="logo"
-            maxW={{ base: '40px', md: '49px', lg: '63px' }} // responsivo
+            maxW={{ base: '40px', md: '49px', lg: '63px' }} 
             h="auto"
             objectFit="contain"
             ml={4}

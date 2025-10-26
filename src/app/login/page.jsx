@@ -28,7 +28,7 @@ export default function Login() {
       minH="78vh"
       px={6}
     >
-      {/* Card principal */}
+      
       <Card
         direction="row"
         overflow="hidden"
@@ -39,7 +39,7 @@ export default function Login() {
         borderRadius="lg"
         mb={2}
       >
-        {/* Imagem à esquerda */}
+        
         <Box flex="1" h="100%">
           <Image
             src="cachorroLogin-image.png"
@@ -50,11 +50,11 @@ export default function Login() {
           />
         </Box>
 
-        {/* Lado direito - Formulário */}
+        
         <Box
           flex="1"
           p={8}
-          pl={12}            // ← aumenta espaço entre imagem e formulário
+          pl={12}            
           display="flex"
           flexDirection="column"
           justifyContent="center"
@@ -77,7 +77,7 @@ export default function Login() {
                 <PasswordInput type="password" placeholder="Sua senha" h="45px" />
               </FormControl>
 
-              {/* Checkbox + Esqueceu senha */}
+              
               <HStack justifyContent="space-between" w="100%" >
                 <Checkbox
                   sx={{
@@ -102,7 +102,7 @@ export default function Login() {
                 </Link>
               </HStack>
 
-              {/* Botão de login */}
+              
               <Button
                 bg="#8D3767"
                 color="white"
@@ -114,7 +114,7 @@ export default function Login() {
                 Entrar
               </Button>
 
-              {/* Criar conta */}
+              
               <Text textAlign="center" mt={8}>
                 Não tem cadastro ainda?
               </Text>
@@ -134,7 +134,7 @@ export default function Login() {
         </Box>
       </Card>
 
-      {/* Rodapé */}
+      
       <Text fontSize="sm" color="#222222">
         © 2025 AumaGêmea. Todos os direitos reservados.
       </Text>
