@@ -7,10 +7,10 @@ export function Header() {
   return (
     <Flex
       as="header"
-      w="90%"
+      w="100%"
       maxW="1193px"
-      p={5}
-      mt={10}
+      p={4}
+      mt={6}
       mx="auto"
       align="center"
       justify="space-between"
@@ -24,9 +24,10 @@ export function Header() {
           <Image
             src="/logo.png"
             alt="logo"
-            maxW={{ base: '40px', md: '49px', lg: '64px' }} // responsivo
+            maxW={{ base: '40px', md: '49px', lg: '63px' }} // responsivo
             h="auto"
             objectFit="contain"
+            ml={4}
           />
         </Link>
       </Heading>
@@ -59,8 +60,8 @@ export function Header() {
         </Link>
       </HStack>
 
-      <HStack spacing={3} flexWrap="wrap" my={{ base: 2, md: 0 }}>
-        <Link href="/cadastro">
+      <HStack spacing={2} flexWrap="wrap" my={{ base: 2, md: 0 }} >
+        <Link href="/cadastro" >
           <Text color="#730E45" cursor="pointer">
             Cadastre-se
           </Text>
@@ -68,11 +69,12 @@ export function Header() {
 
         <Link href="/login">
           <Button
-            borderRadius="100px"
+            borderRadius="90px"
             bg="#F29F05"
             color="#730E45"
             variant="solid"
             _hover={{ bg: '#d6900dff' }}
+            mr={4}
           >
             Login
           </Button>
