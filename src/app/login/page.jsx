@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import {
   Box,
@@ -17,9 +17,9 @@ import {
   InputGroup,
   InputRightElement,
   IconButton,
-} from "@chakra-ui/react";
-import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
-import { useState } from "react";
+} from '@chakra-ui/react';
+import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
+import { useState } from 'react';
 
 function StyledInput({ showToggle, showToggleState, onToggle, ...inputProps }) {
   return (
@@ -33,8 +33,8 @@ function StyledInput({ showToggle, showToggleState, onToggle, ...inputProps }) {
         border="1px solid rgba(34, 34, 34, 0.5)"
         color="rgba(0, 0, 0, 0.8)"
         px="22px"
-        _placeholder={{ color: "rgba(0, 0, 0, 0.5)" }}
-        _hover={{ borderColor: "#702c52" }}
+        _placeholder={{ color: 'rgba(0, 0, 0, 0.5)' }}
+        _hover={{ borderColor: '#702c52' }}
         focusBorderColor="#8D3767"
       />
       {showToggle && (
@@ -68,7 +68,7 @@ export default function Login() {
       px={6}
     >
       <Card
-        direction={{ base: "column", md: "row" }}
+        direction={{ base: 'column', md: 'row' }}
         overflow="hidden"
         w="1131px"
         maxW="95vw"
@@ -76,7 +76,7 @@ export default function Login() {
         borderRadius="lg"
         boxShadow="2xl"
       >
-        <Box w={{ base: "100%", md: "562px" }} h={{ base: "300px", md: "100%" }}>
+        <Box w={{ base: '100%', md: '562px' }} h={{ base: '300px', md: '100%' }}>
           <Image
             src="cachorroLogin-image.png"
             alt="Cachorro fofo"
@@ -87,7 +87,7 @@ export default function Login() {
         </Box>
 
         <Box
-          w={{ base: "100%", md: "569px" }}
+          w={{ base: '100%', md: '569px' }}
           h="100%"
           display="flex"
           flexDirection="column"
@@ -136,7 +136,7 @@ export default function Login() {
                   Senha
                 </Text>
                 <StyledInput
-                  type={showPassword ? "text" : "password"}
+                  type={showPassword ? 'text' : 'password'}
                   placeholder="Sua senha"
                   showToggle
                   showToggleState={showPassword}
@@ -147,10 +147,10 @@ export default function Login() {
               <HStack justifyContent="space-between">
                 <Checkbox
                   sx={{
-                    "& .chakra-checkbox__control": {
-                      _checked: { bg: "#8D3767", borderColor: "#8D3767" },
-                      _hover: { borderColor: "#702c52" },
-                      _focus: { boxShadow: "0 0 0 2px rgba(141,55,103,0.4)" },
+                    '& .chakra-checkbox__control': {
+                      _checked: { bg: '#8D3767', borderColor: '#8D3767' },
+                      _hover: { borderColor: '#702c52' },
+                      _focus: { boxShadow: '0 0 0 2px rgba(141,55,103,0.4)' },
                     },
                   }}
                 >
@@ -159,7 +159,7 @@ export default function Login() {
                   </Text>
                 </Checkbox>
 
-                <Link color="#8D3767" fontWeight="400" _hover={{ textDecoration: "underline" }}>
+                <Link color="#8D3767" fontWeight="400" _hover={{ textDecoration: 'underline' }}>
                   Esqueci a senha
                 </Link>
               </HStack>
@@ -167,7 +167,7 @@ export default function Login() {
               <Button
                 bg="#8D3767"
                 color="white"
-                _hover={{ bg: "#BF3990" }}
+                _hover={{ bg: '#BF3990' }}
                 w="422px"
                 h="54px"
                 borderRadius="10px"
@@ -196,7 +196,7 @@ export default function Login() {
                   w="422px"
                   h="52px"
                   borderRadius="10px"
-                  _hover={{ bg: "blackAlpha.100" }}
+                  _hover={{ bg: 'blackAlpha.100' }}
                   fontFamily="Open Sans"
                   fontWeight="700"
                   fontSize="16px"

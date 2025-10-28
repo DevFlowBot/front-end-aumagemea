@@ -24,7 +24,7 @@ export function Header() {
           <Image
             src="/logo.png"
             alt="logo"
-            maxW={{ base: '40px', md: '49px', lg: '63px' }} 
+            maxW={{ base: '40px', md: '49px', lg: '63px' }}
             h="auto"
             objectFit="contain"
             ml={4}
@@ -60,8 +60,8 @@ export function Header() {
         </Link>
       </HStack>
 
-      <HStack spacing={2} flexWrap="wrap" my={{ base: 2, md: 0 }} >
-        <Link href="/cadastro" >
+      <HStack spacing={2} flexWrap="wrap" my={{ base: 2, md: 0 }}>
+        <Link href="/cadastro">
           <Text color="#730E45" cursor="pointer">
             Cadastre-se
           </Text>
