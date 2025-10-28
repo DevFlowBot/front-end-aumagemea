@@ -9,7 +9,7 @@ export function StyledInput(props) {
       borderRadius="10px"
       fontFamily="Open Sans"
       fontSize="16px"
-      color="rgba(0, 0, 0, 0.8)"
+      color="rgba(77, 74, 74, 0.8)"
       px="22px"
       _placeholder={{ color: 'rgba(0, 0, 0, 0.5)' }}
       focusBorderColor="#8D3767"
