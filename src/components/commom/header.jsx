@@ -22,7 +22,7 @@ export function Header() {
       <Heading size="md" flexShrink={0}>
         <Link href="/">
           <Image
-            src="/logo.png"
+            src="logos/aumagemea.png"
             alt="logo"
             maxW={{ base: '40px', md: '49px', lg: '63px' }}
             h="auto"

@@ -73,6 +73,7 @@ export default function Login() {
         w="1131px"
         maxW="95vw"
         h="768px"
+        color="white"
         borderRadius="lg"
         boxShadow="2xl"
       >
@@ -93,6 +94,7 @@ export default function Login() {
           flexDirection="column"
           alignItems="center"
           justifyContent="center"
+          bg="white"
           gap="40px"
           p={{ base: 6, md: 12 }}
         >
