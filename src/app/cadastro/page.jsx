@@ -13,12 +13,10 @@ import {
   Heading,
   Link,
 } from '@chakra-ui/react';
-
 import { ViewIcon, ViewOffIcon, InfoIcon } from '@chakra-ui/icons';
 import { useState } from 'react';
 
-import { StyledInput } from '@/components/commom/StyledInput';
-import { FormField } from '@/components/commom/FormField';
+import { StyledInput, FormField } from '@/components/commom';
 
 import {
   checkPasswordStrength,
@@ -105,8 +103,9 @@ export default function CadastroForm() {
               <Checkbox
                 sx={{
                   '& .chakra-checkbox__control': {
+                    borderColor: '#8D3767',
                     _checked: { bg: '#8D3767', borderColor: '#8D3767' },
-                    _hover: { borderColor: '#8D3767', bg: '#8D3767' },
+                    _hover: { borderColor: '#702c52' },
                     _focus: { boxShadow: '0 0 0 2px rgba(141,55,103,0.4)' },
                   },
                 }}

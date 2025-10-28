@@ -1,9 +1,8 @@
 'use client';
 
 import '@/styles/globals.scss';
-import { Provider } from '@/components/ui/Provider';
-import { ClientOnly } from '@/components/ui/HydrationGuard';
-import { Header } from '@/components/commom/header';
+import { Provider, ClientOnly } from '@/components/ui';
+import { Header } from '@/components/commom';
 
 export const dynamic = 'force-dynamic';
 
