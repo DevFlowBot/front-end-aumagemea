@@ -11,6 +11,7 @@ export function Header() {
       maxW="1193px"
       p={4}
       mt={6}
+      mb={6}
       mx="auto"
       align="center"
       justify="space-between"

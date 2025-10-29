@@ -42,17 +42,9 @@ export default function CadastroForm() {
   const { hasMinLength, hasNumber, hasSymbol } = rulesPassword(password);
 
   return (
-    <Box
-      minH="90vh"
-      display="flex"
-      flexDirection="column"
-      alignItems="center"
-      justifyContent="center"
-      px={3}
-    >
+    <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center" px={3}>
       <Box
         w="1144px"
-        maxW="95vw"
         bg="white"
         borderRadius="lg"
         boxShadow="2xl"

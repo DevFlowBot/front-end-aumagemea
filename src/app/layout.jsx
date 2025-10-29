@@ -8,7 +8,7 @@ export const dynamic = 'force-dynamic';
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body>
         <ClientOnly>
           <Provider>
