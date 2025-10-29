@@ -17,7 +17,7 @@ export default function HomePage() {
 const FooterWithWave = () => {
   return (
     <Flex position="relative" w="100%" direction="column">
-      <Wave height="200px" color="#222222" position="absolute" top="-200px" />
+      <Wave height="200px" position="absolute" top="-200px" />
       <Footer />
     </Flex>
   );
