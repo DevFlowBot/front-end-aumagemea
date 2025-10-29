@@ -53,6 +53,7 @@ export default function CadastroForm() {
       <Box
         w="1144px"
         maxW="95vw"
+        bg="white"
         borderRadius="lg"
         boxShadow="2xl"
         p="40px"
