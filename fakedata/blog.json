@@ -1,52 +1,32 @@
 [
   {
     "imagem": "blog/image.png",
-    "descricao": "Como melhorar sua produtividade com pequenas rotinas diárias",
-    "link": "/blog/como-melhorar-produtividade"
+    "descricao": "Adotar é um Ato de Amor em Qualquer Idade: As Vantagens de Acolher um Pet Sênior",
+    "link": "/blog/adotar-pet-senior"
   },
   {
     "imagem": "blog/image2.png",
-    "descricao": "Guia rápido: configurando seu ambiente de desenvolvimento",
-    "link": "/blog/guia-ambiente-desenvolvimento"
+    "descricao": "Pai de Pet de Primeira Viagem: O Guia Completo para Começar com a Pata Direita!",
+    "link": "/blog/pai-pet-primeira-viagem"
   },
   {
     "imagem": "blog/image3.png",
-    "descricao": "5 dicas para escrever código mais limpo e legível",
-    "link": "/blog/dicas-codigo-limpo"
+    "descricao": "Tédio? Aqui Não! Como Criar um Ambiente Divertido e Estimulante para seu Pet",
+    "link": "/blog/ambiente-divertido-pet"
   },
   {
     "imagem": "blog/image.png",
-    "descricao": "Ferramentas indispensáveis para desenvolvedores full-stack",
-    "link": "/blog/ferramentas-fullstack"
+    "descricao": "Adotar é um Ato de Amor em Qualquer Idade: As Vantagens de Acolher um Pet Sênior",
+    "link": "/blog/adotar-pet-senior-2"
   },
   {
     "imagem": "blog/image2.png",
-    "descricao": "Como debugar aplicações Node.js como um profissional",
-    "link": "/blog/debug-nodejs"
+    "descricao": "Pai de Pet de Primeira Viagem: O Guia Completo para Começar com a Pata Direita!",
+    "link": "/blog/pai-pet-primeira-viagem-2"
   },
   {
     "imagem": "blog/image3.png",
-    "descricao": "Boas práticas de versionamento com Git e GitHub",
-    "link": "/blog/boas-praticas-git"
-  },
-  {
-    "imagem": "blog/image.png",
-    "descricao": "Aumentando performance: otimizações simples em queries SQL",
-    "link": "/blog/otimizacao-queries-sql"
-  },
-  {
-    "imagem": "blog/image2.png",
-    "descricao": "Introdução ao RabbitMQ: conceitos e exemplos práticos",
-    "link": "/blog/introducao-rabbitmq"
-  },
-  {
-    "imagem": "blog/image3.png",
-    "descricao": "Como configurar CI/CD para projetos em Node e Docker",
-    "link": "/blog/configurar-ci-cd"
-  },
-  {
-    "imagem": "blog/image.png",
-    "descricao": "Estudo de caso: migrando Redis para RabbitMQ sem downtime",
-    "link": "/blog/migrando-redis-para-rabbitmq"
+    "descricao": "Tédio? Aqui Não! Como Criar um Ambiente Divertido e Estimulante para seu Pet",
+    "link": "/blog/ambiente-divertido-pet-2"
   }
 ]
