@@ -1,0 +1,290 @@
+[
+  {
+    "nome": "Farofa",
+    "tipo": "Cachorro",
+    "descricao": "Este é o Farofa, o autêntico vira-lata caramelo que vai conquistar seu coração! Ele tem energia para brincar.",
+    "imagem": "adote/farofa.png",
+    "link": "/adocao/farofa",
+    "ong": {
+      "nome": "Patinhas Felizes",
+      "link": "https://www.patinhasfelizes.org.br",
+      "image": "https://images.unsplash.com/photo-1583336668820-21c7a1c3d6d5"
+    }
+  },
+  {
+    "nome": "Bob",
+    "tipo": "Cachorro",
+    "descricao": "Este é Bob, um chihuahua pequeno no tamanho, mas gigante na personalidade. Com seus pelos.",
+    "imagem": "adote/bob.png",
+    "link": "/adocao/bob",
+    "ong": {
+      "nome": "Amigos Peludos",
+      "link": "https://www.amigospeludos.org",
+      "image": "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13"
+    }
+  },
+  {
+    "nome": "Luke",
+    "tipo": "Cachorro",
+    "descricao": "Conheça o Luke, um cãozinho com um coração gigante e uma vontade de viver ainda maior. Sua cadeirinha.",
+    "imagem": "adote/luke.png",
+    "link": "/adocao/luke",
+    "ong": {
+      "nome": "Resgatando Vidas",
+      "link": "https://www.resgatandovidas.org.br",
+      "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b"
+    }
+  },
+  {
+    "nome": "Nina",
+    "tipo": "Cachorro",
+    "descricao": "Prepare-se para se apaixonar pela Nina! Esta pequena joia de pelagem cor de chocolate e orelhas.",
+    "imagem": "adote/nina.png",
+    "link": "/adocao/nina",
+    "ong": {
+      "nome": "Protetores Peludos",
+      "link": "https://www.protetorespeludos.org",
+      "image": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e"
+    }
+  },
+  {
+    "nome": "Jorge",
+    "tipo": "Cachorro",
+    "descricao": "Este é o Jorge, um cão de porte médio com um olhar que transmite toda a sabedoria e serenidade.",
+    "imagem": "adote/jorge.png",
+    "link": "/adocao/jorge",
+    "ong": {
+      "nome": "Larzinho Animal",
+      "link": "https://www.larzinhoanimal.org.br",
+      "image": "https://images.unsplash.com/photo-1601758123927-1964a3d8b1c7"
+    }
+  },
+  {
+    "nome": "Luke",
+    "tipo": "Cachorro",
+    "descricao": "Conheça o Luke, um cãozinho com um coração gigante e uma vontade de viver ainda maior. Sua cadeirinha.",
+    "imagem": "adote/luke.png",
+    "link": "/adocao/luke",
+    "ong": {
+      "nome": "Resgatando Vidas",
+      "link": "https://www.resgatandovidas.org.br",
+      "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b"
+    }
+  },
+  {
+    "nome": "Snife",
+    "tipo": "Gato",
+    "descricao": "Gatinho calmo e observador, gosta de janelas ensolaradas e sonecas longas.",
+    "imagem": "adote/snife.png",
+    "link": "/adocao/snife",
+    "ong": {
+      "nome": "Gato Protetor",
+      "link": "https://www.gatoprotetor.org",
+      "image": "https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0"
+    }
+  },
+  {
+    "nome": "Bella",
+    "tipo": "Gato",
+    "descricao": "Esta é a Bella, e ela é a prova de que a elegância e a força felina vêm em todas as formas. Com sua pelagem.",
+    "imagem": "adote/bella.png",
+    "link": "/adocao/bella",
+    "ong": {
+      "nome": "Adote Gato",
+      "link": "https://www.adotegato.org.br",
+      "image": "https://images.unsplash.com/photo-1575936123452-b67c3203c357"
+    }
+  },
+  {
+    "nome": "Lola",
+    "tipo": "Gato",
+    "descricao": "Afetuosa e carinhosa, Lola se adapta facilmente e adora colo.",
+    "imagem": "adote/lola.png",
+    "link": "/adocao/lola",
+    "ong": {
+      "nome": "Protetores Felinos",
+      "link": "https://www.protetoresfelinos.org",
+      "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9"
+    }
+  },
+  {
+    "nome": "Bruce",
+    "tipo": "Gato",
+    "descricao": "Com uma pelagem longa e exuberante, tão escura quanto a noite, Bruce é a personificação da elegância.",
+    "imagem": "adote/bruce.png",
+    "link": "/adocao/bruce",
+    "ong": {
+      "nome": "Miau Solidário",
+      "link": "https://www.miausolidario.org",
+      "image": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29"
+    }
+  },
+  {
+    "nome": "Bola de pelo",
+    "tipo": "Gato",
+    "descricao": "Prepare-se para o máximo de fofura! Este é o Bola de pelo, e o nome já diz tudo. Com sua pelagem laranja.",
+    "imagem": "adote/bola-de-pelo.png",
+    "link": "/adocao/bola-de-pelo",
+    "ong": {
+      "nome": "Amigos dos Pets",
+      "link": "https://www.amigodospets.org",
+      "image": "https://images.unsplash.com/photo-1601758064224-0c2f37d0d4a0"
+    }
+  },
+  {
+    "nome": "Pandora",
+    "tipo": "Gato",
+    "descricao": "Pandora é a definição da graça e sofisticação felina. Como uma autêntica siamesa, ela exibe uma pelagem.",
+    "imagem": "adote/pandora.png",
+    "link": "/adocao/pandora",
+    "ong": {
+      "nome": "Larzinho Felino",
+      "link": "https://www.larzinhofelino.org",
+      "image": "https://images.unsplash.com/photo-1543852786-1cf6624b9987"
+    }
+  },
+  {
+    "nome": "Farofa",
+    "tipo": "Cachorro",
+    "descricao": "Este é o Farofa, o autêntico vira-lata caramelo que vai conquistar seu coração! Ele tem energia para brincar.",
+    "imagem": "adote/farofa.png",
+    "link": "/adocao/farofa",
+    "ong": {
+      "nome": "Patinhas Felizes",
+      "link": "https://www.patinhasfelizes.org.br",
+      "image": "https://images.unsplash.com/photo-1583336668820-21c7a1c3d6d5"
+    }
+  },
+  {
+    "nome": "Bob",
+    "tipo": "Cachorro",
+    "descricao": "Este é Bob, um chihuahua pequeno no tamanho, mas gigante na personalidade. Com seus pelos.",
+    "imagem": "adote/bob.png",
+    "link": "/adocao/bob",
+    "ong": {
+      "nome": "Amigos Peludos",
+      "link": "https://www.amigospeludos.org",
+      "image": "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13"
+    }
+  },
+  {
+    "nome": "Luke",
+    "tipo": "Cachorro",
+    "descricao": "Conheça o Luke, um cãozinho com um coração gigante e uma vontade de viver ainda maior. Sua cadeirinha.",
+    "imagem": "adote/luke.png",
+    "link": "/adocao/luke",
+    "ong": {
+      "nome": "Resgatando Vidas",
+      "link": "https://www.resgatandovidas.org.br",
+      "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b"
+    }
+  },
+  {
+    "nome": "Nina",
+    "tipo": "Cachorro",
+    "descricao": "Prepare-se para se apaixonar pela Nina! Esta pequena joia de pelagem cor de chocolate e orelhas.",
+    "imagem": "adote/nina.png",
+    "link": "/adocao/nina",
+    "ong": {
+      "nome": "Protetores Peludos",
+      "link": "https://www.protetorespeludos.org",
+      "image": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e"
+    }
+  },
+  {
+    "nome": "Jorge",
+    "tipo": "Cachorro",
+    "descricao": "Este é o Jorge, um cão de porte médio com um olhar que transmite toda a sabedoria e serenidade.",
+    "imagem": "adote/jorge.png",
+    "link": "/adocao/jorge",
+    "ong": {
+      "nome": "Larzinho Animal",
+      "link": "https://www.larzinhoanimal.org.br",
+      "image": "https://images.unsplash.com/photo-1601758123927-1964a3d8b1c7"
+    }
+  },
+  {
+    "nome": "Luke",
+    "tipo": "Cachorro",
+    "descricao": "Conheça o Luke, um cãozinho com um coração gigante e uma vontade de viver ainda maior. Sua cadeirinha.",
+    "imagem": "adote/luke.png",
+    "link": "/adocao/luke",
+    "ong": {
+      "nome": "Resgatando Vidas",
+      "link": "https://www.resgatandovidas.org.br",
+      "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b"
+    }
+  },
+  {
+    "nome": "Snife",
+    "tipo": "Gato",
+    "descricao": "Gatinho calmo e observador, gosta de janelas ensolaradas e sonecas longas.",
+    "imagem": "adote/snife.png",
+    "link": "/adocao/snife",
+    "ong": {
+      "nome": "Gato Protetor",
+      "link": "https://www.gatoprotetor.org",
+      "image": "https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0"
+    }
+  },
+  {
+    "nome": "Bella",
+    "tipo": "Gato",
+    "descricao": "Esta é a Bella, e ela é a prova de que a elegância e a força felina vêm em todas as formas. Com sua pelagem.",
+    "imagem": "adote/bella.png",
+    "link": "/adocao/bella",
+    "ong": {
+      "nome": "Adote Gato",
+      "link": "https://www.adotegato.org.br",
+      "image": "https://images.unsplash.com/photo-1575936123452-b67c3203c357"
+    }
+  },
+  {
+    "nome": "Lola",
+    "tipo": "Gato",
+    "descricao": "Afetuosa e carinhosa, Lola se adapta facilmente e adora colo.",
+    "imagem": "adote/lola.png",
+    "link": "/adocao/lola",
+    "ong": {
+      "nome": "Protetores Felinos",
+      "link": "https://www.protetoresfelinos.org",
+      "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9"
+    }
+  },
+  {
+    "nome": "Bruce",
+    "tipo": "Gato",
+    "descricao": "Com uma pelagem longa e exuberante, tão escura quanto a noite, Bruce é a personificação da elegância.",
+    "imagem": "adote/bruce.png",
+    "link": "/adocao/bruce",
+    "ong": {
+      "nome": "Miau Solidário",
+      "link": "https://www.miausolidario.org",
+      "image": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29"
+    }
+  },
+  {
+    "nome": "Bola de pelo",
+    "tipo": "Gato",
+    "descricao": "Prepare-se para o máximo de fofura! Este é o Bola de pelo, e o nome já diz tudo. Com sua pelagem laranja.",
+    "imagem": "adote/bola-de-pelo.png",
+    "link": "/adocao/bola-de-pelo",
+    "ong": {
+      "nome": "Amigos dos Pets",
+      "link": "https://www.amigodospets.org",
+      "image": "https://images.unsplash.com/photo-1601758064224-0c2f37d0d4a0"
+    }
+  },
+  {
+    "nome": "Pandora",
+    "tipo": "Gato",
+    "descricao": "Pandora é a definição da graça e sofisticação felina. Como uma autêntica siamesa, ela exibe uma pelagem.",
+    "imagem": "adote/pandora.png",
+    "link": "/adocao/pandora",
+    "ong": {
+      "nome": "Larzinho Felino",
+      "link": "https://www.larzinhofelino.org",
+      "image": "https://images.unsplash.com/photo-1543852786-1cf6624b9987"
+    }
+  }
+]
