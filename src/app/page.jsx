@@ -13,6 +13,7 @@ import pets from '../../fakedata/adote.json' assert { type: 'json' };
 export default function HomePage() {
   return (
     <Flex direction="column" minH="100vh">
+      <HomeCard />
       <MotivosSection />
       <AdoteHome />
       <BlogWithWave />
@@ -21,6 +22,72 @@ export default function HomePage() {
     </Flex>
   );
 }
+
+const HomeCard = () => {
+  return (
+    <Box
+      w="90%"
+      minH="90vh"
+      bgImage="url('/dog-home.png')"
+      bgRepeat="no-repeat"
+      bgSize="85% auto"
+      bgPosition="center bottom"
+      m="0"
+      p="0"
+      ml="5%"
+      mb="-120px"
+      position="relative"
+    >
+      <Box
+        display="flex"
+        flexDirection="column"
+        alignItems="flex-start"
+        gap="290px"
+        position="absolute"
+        width="454px"
+        height="481px"
+        left="123px"
+        top="151px"
+        borderRadius="0px"
+      >
+        <Text
+          fontSize="7xl"
+          fontWeight="bold"
+          fontFamily="Poppins"
+          whiteSpace="nowrap"
+        >
+          <Box as="span" color="#F29F05">AU</Box>
+          <Box as="span" color="#730E45">ma Gêmea</Box>
+        </Text>
+        <Text
+          fontFamily="Poppins"
+          fontWeight="500"
+          fontSize="24px"
+          lineHeight="36px"
+          color="#730E45"
+          w="443px"
+          h="36px"
+          mt="-307px"
+        >
+          Um novo AUmigo, uma nova paixão!
+        </Text>
+        <Button
+          w="188px"
+          h="54px"
+          bg="#730E45"
+          color="white"
+          borderRadius="100px"
+          _hover={{ bg: "#5a0b33" }}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          ADOTAR
+        </Button>
+      </Box>
+    </Box>
+  );
+};
 
 const MotivosSection = () => {
   return (
