@@ -50,14 +50,13 @@ const HomeCard = () => {
         top="151px"
         borderRadius="0px"
       >
-        <Text
-          fontSize="7xl"
-          fontWeight="bold"
-          fontFamily="Poppins"
-          whiteSpace="nowrap"
-        >
-          <Box as="span" color="#F29F05">AU</Box>
-          <Box as="span" color="#730E45">ma Gêmea</Box>
+        <Text fontSize="7xl" fontWeight="bold" fontFamily="Poppins" whiteSpace="nowrap">
+          <Box as="span" color="#F29F05">
+            AU
+          </Box>
+          <Box as="span" color="#730E45">
+            ma Gêmea
+          </Box>
         </Text>
         <Text
           fontFamily="Poppins"
@@ -77,7 +76,7 @@ const HomeCard = () => {
           bg="#730E45"
           color="white"
           borderRadius="100px"
-          _hover={{ bg: "#5a0b33" }}
+          _hover={{ bg: '#5a0b33' }}
           display="flex"
           alignItems="center"
           justifyContent="center"
