@@ -94,7 +94,7 @@ export function AdoteHome() {
             borderRadius="full"
             size="lg"
             px={10}
-            py={7}
+            py={6}
             _hover={{
               bg: 'white',
               color: 'F29F05',
