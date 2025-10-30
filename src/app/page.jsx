@@ -1,7 +1,6 @@
 'use client';
 
-import { Flex, Box, Button, Text } from '@chakra-ui/react';
-import Image from 'next/image';
+import { Flex, Box, Button, Text, Image } from '@chakra-ui/react';
 import { Footer, Wave, BlogCard } from '@/components/commom';
 import blogData from '../../fakedata/blog.json' assert { type: 'json' };
 
@@ -11,13 +10,77 @@ export default function HomePage() {
       <Flex flex="1" justify="center" align="center">
         <h1>Home</h1>
       </Flex>
-
+      <MotivosSection />
       <BlogWithWave />
       <ParceirosSection />
       <FooterWithWave />
     </Flex>
   );
 }
+
+const MotivosSection = () => {
+  return (
+    <Box w="100%" position="relative" zIndex={0}>
+      <Flex>
+        <Wave color="#F3D8EA" />
+      </Flex>
+
+      <Flex
+        direction="column"
+        wrap="wrap"
+        align="center"
+        justify="center"
+        gap={10}
+        p={10}
+        bg="#F3D8EA"
+        w="100%"
+        zIndex={1}
+        position="relative"
+      >
+        <Text
+          fontSize={{ base: '2xl', md: '4xl' }}
+          fontWeight="500"
+          fontFamily="Poppins"
+          mb={8}
+          color="#730E45"
+          textAlign="center"
+        >
+          Motivos para nos escolher!
+        </Text>
+
+  <Flex w="100%" maxW="1000px" h={{ base: '250px', md: '800px' }} mx="auto" gap={4} overflow="visible">
+          {/* Imagem esquerda */}
+          <Box w="50%" h="100%" position="relative" left="-30%" top="-5%" overflow="visible">
+            <Image
+              w="850px"
+              h="850px"
+              maxW="none"
+              src="/diferenciais.png"
+              alt="Diferenciais"
+              style={{ objectFit: 'contain' }}
+            />
+          </Box>
+
+          {/* Imagem direita */}
+          <Box w="50%" h="100%" position="relative" right="-5%" top="-2%" overflow="visible">
+            <Image
+              w="800px"
+              h="800px"
+              maxW="none"
+              src="/dog-and-cat.png"
+              alt="Dog and Cat"
+              style={{ objectFit: 'contain' }}
+            />
+          </Box>
+        </Flex>
+      </Flex>
+
+      <Flex>
+        <Wave color="#F3D8EA" invert mirror />
+      </Flex>
+    </Box>
+  );
+};
 
 export const BlogWithWave = () => {
   return (
@@ -86,7 +149,7 @@ const BlogDataCard = () => {
           color="#AB678D"
           borderRadius="full"
           size="lg"
-          px={10} 
+          px={10}
           py={6}
           _hover={{
             bg: '#FFECC8',
@@ -134,6 +197,8 @@ const ParceirosSection = () => {
           h={{ base: '175px', md: '339px' }}
           position="relative">
           <Image
+            w="400px"
+            h="400px"
             src="/logos/sampa.png"
             alt="Sampa"
             fill style={{ objectFit: 'contain' }} />
@@ -144,6 +209,8 @@ const ParceirosSection = () => {
           h={{ base: '175px', md: '339px' }}
           position="relative">
           <Image
+            w="370px"
+            h="370px"
             src="/logos/artemys.png"
             alt="Artemys"
             fill style={{ objectFit: 'contain' }} />
