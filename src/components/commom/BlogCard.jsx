@@ -11,10 +11,17 @@ export function BlogCard({ imagem, descricao, link }) {
       </Box>
 
       <Box p={4} w="100%">
-        <Text color="black" fontWeight="bold" whiteSpace="normal" wordBreak="break-word" mb={3}>
+        <Text
+          color="#222222"
+          fontFamily="Poppins"
+          fontWeight="500"
+          fontSize="32px"
+          whiteSpace="normal"
+          wordBreak="break-word"
+          mb={3}
+        >
           {descricao}
         </Text>
-
         <LeiaMaisButton link={link} />
       </Box>
     </Box>
@@ -28,13 +35,16 @@ export function LeiaMaisButton({ link }) {
       href={link}
       bg="#AB678D"
       size="md"
+      color="#FFFFFF"
       borderRadius="full"
       variant="ghost"
       position="relative"
       px={5}
+      fontFamily="Poppins"
+      fontSize="16px"
       _hover={{ bg: '#995c7b' }}
     >
-      <Text pr="30px">Leia Mais</Text>
+      <Text pr="30px">LEIA MAIS</Text>
 
       <Box
         w="32px"
