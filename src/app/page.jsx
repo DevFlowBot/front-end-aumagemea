@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 
 import { Flex, Box, Button, Text, Image } from '@chakra-ui/react';
 
@@ -14,7 +13,6 @@ import pets from '../../fakedata/adote.json' assert { type: 'json' };
 export default function HomePage() {
   return (
     <Flex direction="column" minH="100vh">
-
       <MotivosSection />
       <AdoteHome />
       <BlogWithWave />
@@ -54,7 +52,14 @@ const MotivosSection = () => {
           Motivos para nos escolher!
         </Text>
 
-  <Flex w="100%" maxW="1000px" h={{ base: '250px', md: '800px' }} mx="auto" gap={4} overflow="visible">
+        <Flex
+          w="100%"
+          maxW="1000px"
+          h={{ base: '250px', md: '800px' }}
+          mx="auto"
+          gap={4}
+          overflow="visible"
+        >
           <Box w="50%" h="100%" position="relative" left="-30%" top="-5%" overflow="visible">
             <Image
               w="850px"
@@ -97,14 +102,14 @@ export function AdoteHome() {
     <Flex>
       <Box
         position="absolute"
-        top="40px"
+        top="1400px"
         left="20%"
         transform="translateX(-50%)"
         zIndex={-1}
         w="1000px"
         h="1000px"
       >
-        <ImagePata
+        <Image
           src="patinhas/patinhas-audote-branca.png"
           alt="Decorativa topo"
           w="100%"
@@ -115,14 +120,14 @@ export function AdoteHome() {
 
       <Box
         position="absolute"
-        top="650px"
+        top="2010px"
         left="65%"
         transform="translateX(-50%) rotate(10deg)"
         zIndex={-1}
         w="1000px"
         h="1000px"
       >
-        <ImagePata
+        <Image
           src="patinhas/patinhas-audote-branca.png"
           alt="Decorativa fundo"
           w="100%"
@@ -276,25 +281,29 @@ const ParceirosSection = () => {
         <Box
           w={{ base: '200px', md: '387px' }}
           h={{ base: '175px', md: '339px' }}
-          position="relative">
+          position="relative"
+        >
           <Image
             w="400px"
             h="400px"
             src="/logos/sampa.png"
             alt="Sampa"
-            fill style={{ objectFit: 'contain' }} />
+            style={{ objectFit: 'contain' }}
+          />
         </Box>
 
         <Box
           w={{ base: '200px', md: '387px' }}
           h={{ base: '175px', md: '339px' }}
-          position="relative">
+          position="relative"
+        >
           <Image
             w="370px"
             h="370px"
             src="/logos/artemys.png"
             alt="Artemys"
-            fill style={{ objectFit: 'contain' }} />
+            style={{ objectFit: 'contain' }}
+          />
         </Box>
       </Flex>
     </Flex>
