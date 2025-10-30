@@ -81,7 +81,7 @@ export function AdoteHome() {
         </Box>
 
         <Box p={4}>{RenderCarousel(gatos, indexG, setIndexG)}</Box>
-        <Flex justify="center">
+        <Flex py={4} justify="center">
           <Button
             variant="outline"
             href="/adote"
