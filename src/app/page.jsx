@@ -168,8 +168,8 @@ export function AdoteHome() {
     <Flex>
       <Box
         position="absolute"
-        top="1400px"
-        left="20%"
+        top="1500px"
+        left="45%"
         transform="translateX(-50%)"
         zIndex={-1}
         w="1000px"
@@ -186,9 +186,9 @@ export function AdoteHome() {
 
       <Box
         position="absolute"
-        top="2010px"
-        left="65%"
-        transform="translateX(-50%) rotate(10deg)"
+        top="3010px"
+        left="45%"
+        transform="translateX(-50%)"
         zIndex={-1}
         w="1000px"
         h="1000px"
