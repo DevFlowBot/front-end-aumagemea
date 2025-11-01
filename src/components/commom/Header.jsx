@@ -2,26 +2,14 @@
 
 import { Flex, Heading, Button, Image, HStack, Text } from '@chakra-ui/react';
 import Link from 'next/link';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 
 export function Header() {
-  const [showHeader, setShowHeader] = useState(true);
-  const lastScrollY = useRef(0);
+  const [, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      // Se rolou para baixo -> esconder header
-      if (currentScrollY > lastScrollY.current && currentScrollY > 50) {
-        setShowHeader(false);
-      }
-      // Se rolou para cima -> mostrar header
-      else {
-        setShowHeader(true);
-      }
-
-      lastScrollY.current = currentScrollY;
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -37,9 +25,7 @@ export function Header() {
       w="100%"
       zIndex="1000"
       justify="center"
-      transition="transform 0.4s ease, opacity 0.4s ease"
-      transform={showHeader ? 'translateY(0)' : 'translateY(-120%)'}
-      opacity={showHeader ? 1 : 0}
+      transition="box-shadow 0.3s"
       p={0}
     >
       <Flex
@@ -86,7 +72,7 @@ export function Header() {
           </Link>
           <Link href="/adote">
             <Text color="#730E45" cursor="pointer">
-              Adote
+              Audote
             </Text>
           </Link>
           <Link href="/parceiros">
