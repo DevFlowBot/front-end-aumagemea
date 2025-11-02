@@ -27,7 +27,6 @@ export function CardAdote({ nome, tipo, descricao, imagem, link, ong }) {
       justifyContent="space-between"
     >
       <Box position="relative" h="240px">
-        {' '}
         <Image src={imagem} alt={nome} w="full" h="full" objectFit="cover" borderTopRadius="2xl" />
         <Box
           position="absolute"
