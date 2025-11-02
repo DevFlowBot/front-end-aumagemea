@@ -22,7 +22,7 @@ export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" px={6}>
+    <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" px={6} pt="150px">
       <Card
         direction={{ base: 'column', md: 'row' }}
         overflow="hidden"

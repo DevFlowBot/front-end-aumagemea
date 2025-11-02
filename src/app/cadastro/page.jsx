@@ -15,7 +15,6 @@ import {
 } from '@chakra-ui/react';
 import { ViewIcon, ViewOffIcon, InfoIcon } from '@chakra-ui/icons';
 import { useState } from 'react';
-
 import { StyledInput, FormField } from '@/components/commom';
 
 import {
@@ -25,6 +24,13 @@ import {
   colorStrengthPassword,
   rulesPassword,
 } from './lib';
+
+import { Open_Sans } from 'next/font/google';
+
+const openSans = Open_Sans({
+  weight: ['400', '600', '700'],
+  subsets: ['latin'],
+});
 
 export default function CadastroForm() {
   const [showPassword, setShowPassword] = useState(false);
@@ -42,30 +48,45 @@ export default function CadastroForm() {
   const { hasMinLength, hasNumber, hasSymbol } = rulesPassword(password);
 
   return (
-    <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center" px={3}>
+    <Box
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      justifyContent="center"
+      px={{ base: 4, md: 5 }}
+      pt={{ base: '80px', md: '110px' }}
+      className={openSans.className}
+    >
       <Box
-        w="1144px"
+        maxW="1144px"
+        w="100%"
         bg="white"
         borderRadius="lg"
         boxShadow="2xl"
-        p="40px"
+        p={{ base: 6, md: '40px' }}
         mx="auto"
-        mt="40px"
-        mb="30px"
+        mt={{ base: '16px', md: '40px' }}
+        mb={{ base: '12px', md: '30px' }}
       >
         <Heading
           textAlign="center"
           fontFamily="Poppins"
           fontSize="34px"
           color="#8D3767"
-          fontWeight="bold"
+          fontWeight={700}
           mb="40px"
         >
           Crie sua conta
         </Heading>
 
-        <Flex justify="center" align="flex-start" gap="31px" mb="50px">
-          <Flex direction="column" gap="31px" w="422px">
+        <Flex
+          justify="center"
+          align="flex-start"
+          direction={{ base: 'column', md: 'row' }}
+          gap={{ base: 8, md: '31px' }}
+          mb={{ base: 8, md: '50px' }}
+        >
+          <Flex direction="column" gap={{ base: 8, md: '31px' }} w={{ base: '100%', md: '422px' }}>
             <FormField label="Nome" placeholder="Digite seu nome" />
             <FormField label="Sobrenome" placeholder="Digite seu sobrenome" />
 
@@ -118,7 +139,7 @@ export default function CadastroForm() {
             </Flex>
           </Flex>
 
-          <Flex direction="column" gap="31px" w="422px">
+          <Flex direction="column" gap={{ base: 8, md: '31px' }} w={{ base: '100%', md: '422px' }}>
             <FormField label="E-mail" placeholder="Digite seu e-mail" />
 
             <Box>
@@ -192,7 +213,13 @@ export default function CadastroForm() {
               </InputGroup>
 
               {password && (
-                <Box mt={2} position="absolute" w="100%" bottom="-34px">
+                <Box
+                  mt={2}
+                  position={{ base: 'relative', md: 'absolute' }}
+                  w="100%"
+                  bottom={{ base: 'auto', md: '-34px' }}
+                  left={0}
+                >
                   <Box
                     h="5px"
                     borderRadius="full"
@@ -256,7 +283,7 @@ export default function CadastroForm() {
 
         <Flex justify="center" mt={2}>
           <Button
-            w="422px"
+            w={{ base: '100%', md: '422px' }}
             h="54px"
             bg="#8D3767"
             color="#fff"
@@ -271,7 +298,7 @@ export default function CadastroForm() {
         </Flex>
       </Box>
 
-      <Box mt={1}>
+      <Box mt={{ base: 4, md: 1 }}>
         <Text fontSize="sm" color="#222222" textAlign="center">
           © 2025 AumaGêmea. Todos os direitos reservados.
         </Text>
