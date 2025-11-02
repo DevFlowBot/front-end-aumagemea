@@ -7,6 +7,13 @@ const poppins = Poppins({
 });
 
 export const theme = extendTheme({
+  breakpoints: {
+    sm: "320px",
+    md: "768px",
+    lg: "1024px",
+    xl: "1280px",
+    "2xl": "1536px",
+  },
   fonts: {
     heading: poppins.style.fontFamily,
     body: poppins.style.fontFamily,
@@ -18,7 +25,7 @@ export const theme = extendTheme({
     global: {
       body: {
         bg: '#EFEFEF',
-        color: '#ffffffff',
+        color: '#222222',
       },
     },
   },
