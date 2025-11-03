@@ -15,8 +15,14 @@ import {
   Link,
 } from '@chakra-ui/react';
 import { useState } from 'react';
-
 import { StyledInput } from './components/StyledInput';
+
+import { Open_Sans } from 'next/font/google';
+
+const openSans = Open_Sans({
+  weight: ['400', '600', '700'],
+  subsets: ['latin'],
+});
 
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -27,20 +33,21 @@ export default function Login() {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
-      px={6}
-      pt="150px"
+      px={{ base: 4, md: 6 }}
+      pt={{ base: '80px', md: '150px' }}
+      className={openSans.className}
     >
       <Card
         direction={{ base: 'column', md: 'row' }}
         overflow="hidden"
-        w="1131px"
-        maxW="95vw"
-        h="768px"
+        w={{ base: '95vw', md: '1131px' }}
+        maxW="100%"
         color="white"
         borderRadius="lg"
         boxShadow="2xl"
       >
-        <Box w={{ base: '100%', md: '562px' }} h={{ base: '300px', md: '100%' }}>
+        {/* Imagem */}
+        <Box w={{ base: '100%', md: '50%' }} h={{ base: '200px', md: '100%' }}>
           <Image
             src="cachorroLogin-image.png"
             alt="Cachorro fofo"
@@ -50,39 +57,39 @@ export default function Login() {
           />
         </Box>
 
+        {/* Formulário */}
         <Box
-          w={{ base: '100%', md: '569px' }}
-          h="100%"
+          w={{ base: '100%', md: '50%' }}
           display="flex"
           flexDirection="column"
           alignItems="center"
           justifyContent="center"
           bg="white"
-          gap="40px"
           p={{ base: 6, md: 12 }}
+          gap={{ base: 6, md: 10 }}
         >
-          <CardHeader w="426px" p={2}>
+          <CardHeader w="100%" p={0}>
             <Heading
               fontFamily="Poppins"
               fontWeight="700"
-              fontSize="34px"
-              lineHeight="51px"
+              fontSize={{ base: '28px', md: '34px' }}
+              lineHeight={{ base: '42px', md: '51px' }}
               color="#8D3767"
               textAlign="left"
-              mb={2}
+              mb={4}
             >
               Acesse sua conta
             </Heading>
           </CardHeader>
 
-          <CardBody p={0}>
-            <VStack spacing="31px" w="422px" align="stretch">
+          <CardBody p={0} w="100%">
+            <VStack spacing={{ base: 5, md: 8 }} w="100%" align="stretch">
+              {/* Email */}
               <Box display="flex" flexDirection="column" gap="10px">
                 <Text
                   fontFamily="Open Sans"
                   fontWeight="700"
-                  fontSize="16px"
-                  lineHeight="22px"
+                  fontSize={{ base: '14px', md: '16px' }}
                   color="#222"
                 >
                   E-mail
@@ -90,12 +97,12 @@ export default function Login() {
                 <StyledInput type="email" placeholder="Digite seu e-mail" />
               </Box>
 
-              <Box display="flex" flexDirection="column" gap="9px">
+              {/* Senha */}
+              <Box display="flex" flexDirection="column" gap="10px">
                 <Text
                   fontFamily="Open Sans"
                   fontWeight="700"
-                  fontSize="16px"
-                  lineHeight="22px"
+                  fontSize={{ base: '14px', md: '16px' }}
                   color="#222"
                 >
                   Senha
@@ -109,7 +116,8 @@ export default function Login() {
                 />
               </Box>
 
-              <HStack justifyContent="space-between">
+              {/* Lembrar e esqueci a senha */}
+              <HStack justifyContent="space-between" wrap="wrap">
                 <Checkbox
                   sx={{
                     '& .chakra-checkbox__control': {
@@ -120,22 +128,28 @@ export default function Login() {
                     },
                   }}
                 >
-                  <Text fontSize="16px" color="#000" fontFamily="Open Sans">
+                  <Text fontSize={{ base: '14px', md: '16px' }} color="#000">
                     Lembrar conta
                   </Text>
                 </Checkbox>
 
-                <Link color="#8D3767" fontWeight="400" _hover={{ textDecoration: 'underline' }}>
+                <Link
+                  color="#8D3767"
+                  fontWeight="400"
+                  fontSize={{ base: '14px', md: '16px' }}
+                  _hover={{ textDecoration: 'underline' }}
+                >
                   Esqueci a senha
                 </Link>
               </HStack>
 
+              {/* Botão Entrar */}
               <Button
                 bg="#8D3767"
                 color="white"
                 _hover={{ bg: '#BF3990' }}
-                w="422px"
-                h="54px"
+                w="100%"
+                h={{ base: '50px', md: '54px' }}
                 borderRadius="10px"
                 fontFamily="Poppins"
                 fontWeight="600"
@@ -144,12 +158,12 @@ export default function Login() {
                 Entrar
               </Button>
 
-              <VStack spacing="20px" w="422px">
+              {/* Criar conta */}
+              <VStack spacing={{ base: 4, md: 6 }} w="100%">
                 <Text
                   fontFamily="Open Sans"
                   fontWeight="400"
-                  fontSize="16px"
-                  lineHeight="22px"
+                  fontSize={{ base: '14px', md: '16px' }}
                   textAlign="center"
                   color="#000"
                 >
@@ -159,14 +173,13 @@ export default function Login() {
                   variant="outline"
                   borderColor="#222"
                   color="#222"
-                  w="422px"
-                  h="52px"
+                  w="100%"
+                  h={{ base: '48px', md: '52px' }}
                   borderRadius="10px"
                   _hover={{ bg: 'blackAlpha.100' }}
                   fontFamily="Open Sans"
                   fontWeight="700"
-                  fontSize="16px"
-                  lineHeight="22px"
+                  fontSize={{ base: '14px', md: '16px' }}
                 >
                   Criar uma conta
                 </Button>
@@ -176,8 +189,8 @@ export default function Login() {
         </Box>
       </Card>
 
-      <Box mt={6}>
-        <Text fontSize="sm" color="#222222" textAlign="center">
+      <Box mt={{ base: 4, md: 6 }}>
+        <Text fontSize={{ base: '12px', md: '14px' }} color="#222222" textAlign="center">
           © 2025 AumaGêmea. Todos os direitos reservados.
         </Text>
       </Box>

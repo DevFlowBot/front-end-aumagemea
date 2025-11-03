@@ -6,4 +6,4 @@ export * from './Wave';
 export * from './BlogCard';
 export * from './CardAdote';
 export * from './RenderCarousel';
-export * from './VejaMais';
+export * from './ButtonVejaMais';

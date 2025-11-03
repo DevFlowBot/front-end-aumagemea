@@ -1,7 +1,6 @@
 'use client';
 
 import { Flex, Box, Text, Image } from '@chakra-ui/react';
-
 import { Wave } from '@/components/commom';
 
 export function MotivoSection() {
@@ -33,55 +32,64 @@ export function MotivoSection() {
         <Flex
           w="100%"
           maxW="1000px"
-          h={{ base: 'auto', md: '800px' }}
           mx="auto"
-          gap={{ base: 4, md: 6 }}
+          gap={{ base: 6, md: 10 }}
           overflow="visible"
           position="relative"
           flexWrap={{ base: 'wrap', md: 'nowrap' }}
           justify="center"
         >
+          {/* Patinhas esquerda */}
           <Image
             src="/patinhas/patinhas-motivos-esquerda.png"
             alt="Patinhas Esquerda"
             position="absolute"
             top={{ base: '-30px', md: '-180px' }}
-            left={{ base: '-60px', md: '-510px' }}
-            zIndex="0"
-            w={{ base: '130px', md: '450px', lg: '650px' }}
-            opacity="0.8"
+            left={{ base: '-30px', md: '-510px' }}
+            zIndex={0}
+            w={{ base: '80px', md: '450px', lg: '650px' }}
+            opacity={0.8}
             display={{ base: 'none', md: 'block' }}
           />
-          <Box w={{ base: '100%', md: '50%' }} position="relative" zIndex="1">
+
+          {/* Box Diferenciais */}
+          <Box
+            w={{ base: '100%', md: '50%' }}
+            position="relative"
+            zIndex={1}
+            mb={{ base: 6, md: 0 }}
+          >
             <Image
               w="100%"
               h="auto"
               src="/diferenciais.png"
               alt="Diferenciais"
-              style={{ objectFit: 'contain' }}
+              objectFit="contain"
             />
           </Box>
+
+          {/* Patinhas direita */}
           <Image
             src="/patinhas/patinhas-motivos-direita.png"
             alt="Patinhas Direita"
             position="absolute"
             bottom={{ base: '-20px', md: '-105px' }}
-            right={{ base: '-40px', md: '-450px' }}
-            zIndex="0"
-            w={{ base: '110px', md: '400px', lg: '700px' }}
-            opacity="0.8"
+            right={{ base: '-20px', md: '-450px' }}
+            zIndex={0}
+            w={{ base: '70px', md: '400px', lg: '700px' }}
+            opacity={0.8}
             display={{ base: 'none', md: 'block' }}
           />
-          <Box w={{ base: '100%', md: '50%' }} position="relative" zIndex="1">
-            <Image
-              w="100%"
-              h="auto"
-              src="/dog-and-cat.png"
-              alt="Dog and Cat"
-              style={{ objectFit: 'contain' }}
-              ml="150px"
-              mt="150px"
-            />
+
+          {/* Box Dog and Cat */}
+          <Box
+            w={{ base: '100%', md: '50%' }}
+            position="relative"
+            zIndex={1}
+            ml={{ base: 0, md: '150px' }}
+            mt={{ base: 6, md: '150px' }}
+          >
+            <Image w="100%" h="auto" src="/dog-and-cat.png" alt="Dog and Cat" objectFit="contain" />
           </Box>
         </Flex>
       </Flex>

@@ -1,9 +1,7 @@
 'use client';
 
 import { Flex, Box, Text, Image, Button } from '@chakra-ui/react';
-
 import { Wave, BlogCard } from '@/components/commom';
-
 import blogData from '../../../../../fakedata/blog.json' assert { type: 'json' };
 
 export function BlogSection() {
@@ -16,16 +14,17 @@ export function BlogSection() {
         align="center"
         justify="center"
         gap={{ base: 4, md: 6 }}
-        p={{ base: 4, md: 10 }}
+        p={{ base: 4, sm: 6, md: 10 }}
         bg="#FFECC8"
         w="100%"
         zIndex={1}
       >
+        {/* Título */}
         <Text
-          fontSize={{ base: 'xl', md: '2xl', lg: '32px' }}
+          fontSize={{ base: 'xl', sm: '2xl', md: '3xl', lg: '32px' }}
           fontWeight="500"
           color="#222222"
-          mb={6}
+          mb={{ base: 4, md: 6 }}
           textAlign="center"
           fontFamily="Poppins"
         >
@@ -41,13 +40,14 @@ export function BlogSection() {
           position="relative"
           zIndex={1}
         >
+          {/* Imagens decorativas */}
           <Image
             src="/patinhas/blog-patinhas-esquerda.png"
             alt="Patinhas Esquerda"
             position="absolute"
-            top={{ base: '-30px', md: '-140px' }}
-            left={{ base: '-40px', md: '-320px' }}
-            w={{ base: '70px', md: '350px', lg: '800px' }}
+            top={{ base: '-20px', sm: '-60px', md: '-140px' }}
+            left={{ base: '-20px', sm: '-120px', md: '-320px' }}
+            w={{ base: '50px', sm: '200px', md: '350px', lg: '800px' }}
             opacity="0.8"
             zIndex={0}
             pointerEvents="none"
@@ -57,17 +57,18 @@ export function BlogSection() {
             src="/patinhas/blog-patinhas-direita.png"
             alt="Patinhas Direita"
             position="absolute"
-            bottom={{ base: '-20px', md: '-65px' }}
-            right={{ base: '-30px', md: '-350px' }}
-            w={{ base: '80px', md: '380px', lg: '760px' }}
+            bottom={{ base: '-10px', sm: '-40px', md: '-65px' }}
+            right={{ base: '-20px', sm: '-180px', md: '-350px' }}
+            w={{ base: '60px', sm: '220px', md: '380px', lg: '760px' }}
             opacity="0.8"
             zIndex={0}
             pointerEvents="none"
             display={{ base: 'none', md: 'block' }}
           />
 
+          {/* Cards */}
           <Flex
-            direction="row"
+            direction={{ base: 'column', sm: 'row' }}
             wrap="wrap"
             justify="center"
             gap={{ base: 4, md: 6 }}
@@ -79,7 +80,8 @@ export function BlogSection() {
             ))}
           </Flex>
 
-          <Box textAlign="center" my={8}>
+          {/* Botão */}
+          <Box textAlign="center" my={{ base: 6, md: 8 }}>
             <Button
               variant="outline"
               href="/blog"
@@ -90,8 +92,9 @@ export function BlogSection() {
               color="#AB678D"
               borderRadius="full"
               size="lg"
-              px={{ base: 6, md: 10 }}
-              py={{ base: 3, md: 6 }}
+              px={{ base: 4, sm: 6, md: 10 }}
+              py={{ base: 2, sm: 3, md: 6 }}
+              fontSize={{ base: 'sm', sm: 'md', md: 'lg' }}
               _hover={{
                 bg: '#FFECC8',
                 color: '#AB678D',

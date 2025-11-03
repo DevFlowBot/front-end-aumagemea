@@ -71,10 +71,10 @@ export default function CadastroForm() {
         <Heading
           textAlign="center"
           fontFamily="Poppins"
-          fontSize="34px"
+          fontSize={{ base: '28px', md: '34px' }}
           color="#8D3767"
           fontWeight={700}
-          mb="40px"
+          mb={{ base: '30px', md: '40px' }}
         >
           Crie sua conta
         </Heading>
@@ -83,10 +83,12 @@ export default function CadastroForm() {
           justify="center"
           align="flex-start"
           direction={{ base: 'column', md: 'row' }}
-          gap={{ base: 8, md: '31px' }}
-          mb={{ base: 8, md: '50px' }}
+          gap={{ base: 6, md: '31px' }}
+          mb={{ base: 6, md: '50px' }}
+          wrap="wrap"
         >
-          <Flex direction="column" gap={{ base: 8, md: '31px' }} w={{ base: '100%', md: '422px' }}>
+          {/* Coluna Esquerda */}
+          <Flex direction="column" gap={{ base: 6, md: '31px' }} w={{ base: '100%', md: '422px' }}>
             <FormField label="Nome" placeholder="Digite seu nome" />
             <FormField label="Sobrenome" placeholder="Digite seu sobrenome" />
 
@@ -124,7 +126,7 @@ export default function CadastroForm() {
                   },
                 }}
               />
-              <Text fontSize="16px" color="#000" fontFamily="Open Sans" fontWeight="regular">
+              <Text fontSize="14px" color="#000" fontFamily="Open Sans" fontWeight="regular">
                 Concordo com os{' '}
                 <Link
                   href="#"
@@ -139,7 +141,8 @@ export default function CadastroForm() {
             </Flex>
           </Flex>
 
-          <Flex direction="column" gap={{ base: 8, md: '31px' }} w={{ base: '100%', md: '422px' }}>
+          {/* Coluna Direita */}
+          <Flex direction="column" gap={{ base: 6, md: '31px' }} w={{ base: '100%', md: '422px' }}>
             <FormField label="E-mail" placeholder="Digite seu e-mail" />
 
             <Box>
@@ -154,8 +157,9 @@ export default function CadastroForm() {
               />
             </Box>
 
+            {/* Senha */}
             <Box position="relative">
-              <Flex align="center" gap="8px" mb="10px">
+              <Flex align="center" gap="6px" mb="10px" wrap="wrap">
                 <Text fontFamily="Open Sans" fontWeight="bold" fontSize="16px" color="#222">
                   Senha
                 </Text>
@@ -175,7 +179,7 @@ export default function CadastroForm() {
                     </Box>
                   }
                 >
-                  <InfoIcon color="#222" size="sm" mt="2px" />
+                  <InfoIcon color="#222" mt="2px" />
                 </Tooltip>
               </Flex>
               <InputGroup h="100%">
@@ -205,9 +209,6 @@ export default function CadastroForm() {
                     onClick={() => setShowPassword(!showPassword)}
                     variant="unstyled"
                     color="gray.500"
-                    display="flex"
-                    alignItems="center"
-                    justifyContent="center"
                   />
                 </InputRightElement>
               </InputGroup>
@@ -238,6 +239,7 @@ export default function CadastroForm() {
               )}
             </Box>
 
+            {/* Confirmar senha */}
             <Box position="relative">
               <Text fontFamily="Open Sans" fontWeight="700" fontSize="16px" mb="10px" color="#222">
                 Confirmar senha
@@ -263,9 +265,6 @@ export default function CadastroForm() {
                     onClick={() => setShowConfirmPassword(!showConfirmPassword)}
                     variant="unstyled"
                     color="gray.500"
-                    display="flex"
-                    alignItems="center"
-                    justifyContent="center"
                   />
                 </InputRightElement>
               </InputGroup>
@@ -281,7 +280,8 @@ export default function CadastroForm() {
           </Flex>
         </Flex>
 
-        <Flex justify="center" mt={2}>
+        {/* Botão Cadastrar */}
+        <Flex justify="center" mt={4}>
           <Button
             w={{ base: '100%', md: '422px' }}
             h="54px"
@@ -298,7 +298,7 @@ export default function CadastroForm() {
         </Flex>
       </Box>
 
-      <Box mt={{ base: 4, md: 1 }}>
+      <Box mt={{ base: 4, md: 2 }}>
         <Text fontSize="sm" color="#222222" textAlign="center">
           © 2025 AumaGêmea. Todos os direitos reservados.
         </Text>

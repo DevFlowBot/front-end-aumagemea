@@ -13,7 +13,7 @@ import {
 
 export default function HomePage() {
   return (
-    <Flex direction="column" minH="100vh" overflowX="hidden">
+    <Flex direction="column" minH="100vh" w="100%" maxW="100vw" overflowX="hidden">
       <CardSection />
       <MotivoSection />
       <AdoteSection />

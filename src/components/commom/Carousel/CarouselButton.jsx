@@ -9,12 +9,12 @@ export function CarouselButton({ direction = 'right', onClick, zIndex = 5 }) {
     <Button
       onClick={onClick}
       position="absolute"
-      left={isLeft ? '25px' : undefined}
-      right={!isLeft ? '25px' : undefined}
+      left={isLeft ? { base: '10px', md: '25px' } : undefined}
+      right={!isLeft ? { base: '10px', md: '25px' } : undefined}
       top="50%"
       transform={`translateY(-50%) ${isLeft ? 'scaleX(-1)' : ''}`}
-      w="60px"
-      h="60px"
+      w={{ base: '40px', md: '60px' }}
+      h={{ base: '40px', md: '60px' }}
       borderRadius="full"
       bg="#FFBD43"
       border="4px solid white"
@@ -22,7 +22,7 @@ export function CarouselButton({ direction = 'right', onClick, zIndex = 5 }) {
       zIndex={zIndex}
       _hover={{ bg: '#FFB233' }}
     >
-      <ArrowForwardIcon color="black" w={8} h={8} />
+      <ArrowForwardIcon color="black" w={{ base: 5, md: 8 }} h={{ base: 5, md: 8 }} />
     </Button>
   );
 }

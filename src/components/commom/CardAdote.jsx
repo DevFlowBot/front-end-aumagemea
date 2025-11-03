@@ -4,12 +4,12 @@ import { Box, Image, Text, Flex, Badge } from '@chakra-ui/react';
 import { FiStar } from 'react-icons/fi';
 import { useState } from 'react';
 
-import { VejaMaisButton } from './VejaMais';
+import { VejaMaisButton } from './ButtonVejaMais';
 
 export function CardAdote({ nome, tipo, descricao, imagem, link, ong }) {
   const [favorito, setFavorito] = useState(false);
 
-  const shortDesc = descricao.length > 90 ? descricao.slice(0, 90).trim() + '...' : descricao;
+  const shortDesc = descricao.length > 80 ? descricao.slice(0, 80).trim() + '...' : descricao;
 
   return (
     <Box
@@ -25,6 +25,7 @@ export function CardAdote({ nome, tipo, descricao, imagem, link, ong }) {
       display="flex"
       flexDirection="column"
       justifyContent="space-between"
+      mb={{ base: 4, md: 6 }}
     >
       <Box position="relative" h="240px">
         <Image src={imagem} alt={nome} w="full" h="full" objectFit="cover" borderTopRadius="2xl" />

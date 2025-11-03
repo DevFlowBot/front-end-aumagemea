@@ -1,8 +1,8 @@
 'use client';
 
-import { Box, Button, Text } from '@chakra-ui/react';
+import { Box, Button, Text, useBreakpointValue } from '@chakra-ui/react';
 
-export function CardSection() {
+export function CardSectionDesktop() {
   return (
     <Box
       w="100%"
@@ -66,4 +66,62 @@ export function CardSection() {
       </Box>
     </Box>
   );
+}
+export function CardSectionMobile() {
+  return (
+    <Box
+      w="100%"
+      minH={{ base: '60vh', md: '50vh' }}
+      bgRepeat="no-repeat"
+      bgImage="url('/dog.png')"
+      bgSize={{ base: '80%', md: '80%' }}
+      bgPosition={{ base: 'center bottom', md: 'center bottom' }}
+      position="relative"
+      overflow="hidden"
+      top="135px"
+    >
+      {/* Texto e botão */}
+      <Box
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
+        textAlign="center"
+        gap={4}
+        zIndex={2}
+      >
+        <Text fontSize="3xl" fontWeight="bold" fontFamily="Poppins">
+          <Box as="span" color="#F29F05">
+            AU
+          </Box>
+          <Box as="span" color="#730E45">
+            ma Gêmea
+          </Box>
+        </Text>
+        <Text
+          fontFamily="Poppins"
+          fontWeight="500"
+          fontSize="16px"
+          lineHeight="24px"
+          color="#730E45"
+        >
+          Um novo AUmigo, uma nova paixão!
+        </Text>
+        <Button
+          w="140px"
+          h="40px"
+          bg="#730E45"
+          color="white"
+          borderRadius="100px"
+          _hover={{ bg: '#5a0b33' }}
+        >
+          ADOTAR
+        </Button>
+      </Box>
+    </Box>
+  );
+}
+
+export function CardSection() {
+  const isMobile = useBreakpointValue({ base: true, md: false });
+  return isMobile ? <CardSectionMobile /> : <CardSectionDesktop />;
 }
