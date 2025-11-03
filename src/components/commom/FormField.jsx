@@ -12,4 +12,3 @@ export function FormField({ label, placeholder }) {
     </Box>
   );
 }
-

@@ -16,13 +16,20 @@ import {
 } from '@chakra-ui/react';
 import { useState } from 'react';
 
-import { StyledInput } from './StyledInput';
+import { StyledInput } from './components/StyledInput';
 
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" px={6} pt="150px">
+    <Box
+      display="flex"
+      flexDirection="column"
+      justifyContent="center"
+      alignItems="center"
+      px={6}
+      pt="150px"
+    >
       <Card
         direction={{ base: 'column', md: 'row' }}
         overflow="hidden"

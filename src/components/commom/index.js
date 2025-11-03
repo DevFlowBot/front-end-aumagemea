@@ -4,3 +4,6 @@ export * from './StyledInput';
 export * from './Header';
 export * from './Wave';
 export * from './BlogCard';
+export * from './CardAdote';
+export * from './RenderCarousel';
+export * from './VejaMais';

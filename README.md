@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🐾 AUmaGemea Front-End
 
-## Getting Started
+Projeto **frontend** feito em **Next.js** com **Chakra UI** para **componentização** e **design responsivo**.
 
-First, run the development server:
+---
+
+## 🚀 Como rodar
+
+1. **Instale as dependências:**
+
+```bash
+npm install
+# ou
+yarn install
+```
+
+2. **Rode o projeto em modo de desenvolvimento:**
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Abra no navegador:**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠 Comandos Úteis
 
-To learn more about Next.js, take a look at the following resources:
+Nesta seção você encontra os principais scripts do projeto para **desenvolvimento**, **build**, **produção** e **formatação do código**.
+É importante seguir esta ordem de execução para manter o projeto consistente e o código sempre limpo antes de commitar alterações.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Desenvolvimento
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run dev
+# ou
+yarn dev
+```
 
-## Deploy on Vercel
+### Build e Produção
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+npm run start
+# ou
+yarn build
+yarn start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Lint e Formatação
+
+```bash
+npm run lint:ci       # Executa ESLint e corrige problemas automaticamente
+npm run format        # Formata todo o código com ESLint + Prettier
+npm run format:check  # Verifica se o código está formatado corretamente
+# ou
+yarn lint:ci
+yarn format
+yarn format:check
+```
+
+💡 **Dica:** Sempre rode `format` antes de commitar para evitar problemas de estilo e inconsistência.
+
+---
+
+## 🗂 Estrutura do Projeto (dentro de `src/`)
+
+- **app/** – Contém todas as páginas do projeto
+  - `(main)/` → páginas públicas (home, etc)
+  - `(auth)/` → páginas de autenticação (login, cadastro)
+  - `layout.jsx` → layout raiz (Provider Chakra, header global, etc)
+
+- **components/** – Componentes React organizados por escopo
+  - `common/` → componentes reutilizáveis em várias páginas
+  - `ui/` → infraestrutura de UI (Provider, Theme, HydrationGuard)
+
+- **styles/** → estilos globais e overrides
+
+---
+
+## 🖌 Tecnologias Utilizadas
+
+- **Next.js** (App Router)
+- **React** (componentes modernos)
+- **Chakra UI** (UI responsiva e acessível)
+- **JSON local** para dados fake
+
+---
+
+## 💡 Dicas
+
+- Siga a **estrutura de pastas** e mantenha a modularidade.
+- Todos os **componentes novos devem ser responsivos** usando os breakpoints do Chakra (`base`, `md`, `lg`).
+- Use os **JSONs fake** que estão na pasta `fakedata/` na raiz do projeto para testes enquanto o backend não estiver pronto.

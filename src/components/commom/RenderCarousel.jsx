@@ -6,7 +6,7 @@ import { Box } from '@chakra-ui/react';
 import { CarouselButton } from './Carousel/CarouselButton';
 import { CarouselTrack } from './Carousel/CarouselTrack';
 
-export function RenderCarousel({ items = [], index, setIndex }) {
+export function RenderCarousel({ items = [], index, setIndex, Component }) {
   const containerRef = useRef(null);
   const [containerWidth, setContainerWidth] = useState(0);
 
@@ -51,16 +51,13 @@ export function RenderCarousel({ items = [], index, setIndex }) {
 
   return (
     <Box position="relative" w="full" overflow="hidden" py={1} ref={containerRef}>
-      {safeIndex > 0 && (
-        <CarouselButton direction="left" onClick={prev} zIndex={10} />
-      )}
+      {safeIndex > 0 && <CarouselButton direction="left" onClick={prev} zIndex={10} />}
 
-      {safeIndex < maxIndex && (
-        <CarouselButton direction="right" onClick={next} zIndex={5} />
-      )}
+      {safeIndex < maxIndex && <CarouselButton direction="right" onClick={next} zIndex={5} />}
 
       <CarouselTrack
         items={items}
+        Component={Component}
         cardWidth={cardWidth}
         gap={gap}
         offset={offset}

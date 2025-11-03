@@ -1,9 +1,8 @@
 'use client';
 import { Flex, Box } from '@chakra-ui/react';
-import { CardAdote } from '../CardAdote';
 
-export function CarouselTrack({ items, cardWidth = 420, gap = 24, offset = 0 }) {
-const totalWidth = items.length * cardWidth + Math.max(0, items.length - 1) * gap;
+export function CarouselTrack({ items, Component, cardWidth = 420, gap = 24, offset = 0 }) {
+  const totalWidth = items.length * cardWidth + Math.max(0, items.length - 1) * gap;
 
   return (
     <Flex
@@ -17,7 +16,7 @@ const totalWidth = items.length * cardWidth + Math.max(0, items.length - 1) * ga
     >
       {items.map((item, idx) => (
         <Box key={idx} flex={`0 0 ${cardWidth}px`}>
-          <CardAdote {...item} />
+          <Component {...item} />
         </Box>
       ))}
     </Flex>
