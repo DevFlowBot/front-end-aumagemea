@@ -2,21 +2,85 @@
   {
     "imagem": "blog/image.png",
     "descricao": "Adotar é um Ato de Amor em Qualquer Idade: As Vantagens de Acolher um Pet Sênior",
-    "link": "/blog/adotar-pet-senior"
+    "link": "/blog/adotar-pet-senior",
+    "data": "2025-10-21",
+    "tempo_gasto_leitura": "4 min"
   },
   {
     "imagem": "blog/image2.png",
     "descricao": "Pai de Pet de Primeira Viagem: O Guia Completo para Começar com a Pata Direita!",
-    "link": "/blog/pai-pet-primeira-viagem"
+    "link": "/blog/pai-pet-primeira-viagem",
+    "data": "2025-10-28",
+    "tempo_gasto_leitura": "6 min"
   },
   {
     "imagem": "blog/image3.png",
     "descricao": "Tédio? Aqui Não! Como Criar um Ambiente Divertido e Estimulante para seu Pet",
-    "link": "/blog/ambiente-divertido-pet"
+    "link": "/blog/ambiente-divertido-pet",
+    "data": "2025-11-02",
+    "tempo_gasto_leitura": "5 min"
   },
   {
     "imagem": "blog/image.png",
     "descricao": "Adotar é um Ato de Amor em Qualquer Idade: As Vantagens de Acolher um Pet Sênior",
-    "link": "/blog/adotar-pet-senior-2"
+    "link": "/blog/adotar-pet-senior-2",
+    "data": "2025-11-05",
+    "tempo_gasto_leitura": "4 min"
+  },
+  {
+    "imagem": "blog/image.png",
+    "descricao": "Adotar é um Ato de Amor em Qualquer Idade: As Vantagens de Acolher um Pet Sênior",
+    "link": "/blog/adotar-pet-senior",
+    "data": "2025-10-21",
+    "tempo_gasto_leitura": "4 min"
+  },
+  {
+    "imagem": "blog/image2.png",
+    "descricao": "Pai de Pet de Primeira Viagem: O Guia Completo para Começar com a Pata Direita!",
+    "link": "/blog/pai-pet-primeira-viagem",
+    "data": "2025-10-28",
+    "tempo_gasto_leitura": "6 min"
+  },
+  {
+    "imagem": "blog/image3.png",
+    "descricao": "Tédio? Aqui Não! Como Criar um Ambiente Divertido e Estimulante para seu Pet",
+    "link": "/blog/ambiente-divertido-pet",
+    "data": "2025-11-02",
+    "tempo_gasto_leitura": "5 min"
+  },
+  {
+    "imagem": "blog/image.png",
+    "descricao": "Adotar é um Ato de Amor em Qualquer Idade: As Vantagens de Acolher um Pet Sênior",
+    "link": "/blog/adotar-pet-senior-2",
+    "data": "2025-11-05",
+    "tempo_gasto_leitura": "4 min"
+  },
+  {
+    "imagem": "blog/image.png",
+    "descricao": "Adotar é um Ato de Amor em Qualquer Idade: As Vantagens de Acolher um Pet Sênior",
+    "link": "/blog/adotar-pet-senior",
+    "data": "2025-10-21",
+    "tempo_gasto_leitura": "4 min"
+  },
+  {
+    "imagem": "blog/image2.png",
+    "descricao": "Pai de Pet de Primeira Viagem: O Guia Completo para Começar com a Pata Direita!",
+    "link": "/blog/pai-pet-primeira-viagem",
+    "data": "2025-10-28",
+    "tempo_gasto_leitura": "6 min"
+  },
+  {
+    "imagem": "blog/image3.png",
+    "descricao": "Tédio? Aqui Não! Como Criar um Ambiente Divertido e Estimulante para seu Pet",
+    "link": "/blog/ambiente-divertido-pet",
+    "data": "2025-11-02",
+    "tempo_gasto_leitura": "5 min"
+  },
+  {
+    "imagem": "blog/image.png",
+    "descricao": "Adotar é um Ato de Amor em Qualquer Idade: As Vantagens de Acolher um Pet Sênior",
+    "link": "/blog/adotar-pet-senior-2",
+    "data": "2025-11-05",
+    "tempo_gasto_leitura": "4 min"
   }
 ]
