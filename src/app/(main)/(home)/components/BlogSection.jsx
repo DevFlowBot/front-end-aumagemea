@@ -1,5 +1,5 @@
 'use client';
-import { omit } from 'lodash'
+import { omit } from 'lodash';
 
 import { Flex, Box, Text, Image, Button } from '@chakra-ui/react';
 import { Wave, BlogCard } from '@/components/commom';
@@ -99,7 +99,11 @@ export function BlogSection() {
             zIndex={1}
           >
             {blogData.slice(0, 4).map((item, index) => (
-              <BlogCard {...omit(item, ['data', 'tempo_gasto_leitura'])} key={index} {...blogCardStyle} />
+              <BlogCard
+                {...omit(item, ['data', 'tempo_gasto_leitura'])}
+                key={index}
+                {...blogCardStyle}
+              />
             ))}
           </Flex>
 
