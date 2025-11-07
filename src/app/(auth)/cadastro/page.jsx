@@ -45,6 +45,8 @@ export default function CadastroForm() {
   const [phone, setPhone] = useState('');
   const [birthDate, setBirthDate] = useState('');
 
+  const [userType, setUserType] = useState('');
+
   const { hasMinLength, hasNumber, hasSymbol } = rulesPassword(password);
 
   return (
@@ -79,6 +81,35 @@ export default function CadastroForm() {
           Crie sua conta
         </Heading>
 
+        <Flex justify="center" gap={4} mb={4} wrap="wrap">
+          <Button
+            onClick={() => setUserType('adotante')}
+            bg={userType === 'adotante' ? '#8D3767' : '#8d3766c2'}
+            color="#fff"
+            _hover={{ bg: userType === 'adotante' ? '#8D3767' : '#8d3766c2' }}
+            borderRadius="10px"
+            fontFamily="Poppins"
+            fontWeight={600}
+            p="20px"
+            w={{ base: '48%', md: '150px' }}
+          >
+            ADOTANTE
+          </Button>
+          <Button
+            onClick={() => setUserType('ong')}
+            bg={userType === 'ong' ? '#8D3767' : '#8d3766c2'}
+            color="#fff"
+            _hover={{ bg: userType === 'ong' ? '#8D3767' : '#8d3766c2' }}
+            borderRadius="10px"
+            fontFamily="Poppins"
+            fontWeight={600}
+            p="20px"
+            w={{ base: '48%', md: '150px' }}
+          >
+            ONG
+          </Button>
+        </Flex>
+
         <Flex
           justify="center"
           align="flex-start"
@@ -87,7 +118,7 @@ export default function CadastroForm() {
           mb={{ base: 6, md: '50px' }}
           wrap="wrap"
         >
-          {/* Coluna Esquerda */}
+
           <Flex direction="column" gap={{ base: 6, md: '31px' }} w={{ base: '100%', md: '422px' }}>
             <FormField label="Nome" placeholder="Digite seu nome" />
             <FormField label="Sobrenome" placeholder="Digite seu sobrenome" />
@@ -141,7 +172,6 @@ export default function CadastroForm() {
             </Flex>
           </Flex>
 
-          {/* Coluna Direita */}
           <Flex direction="column" gap={{ base: 6, md: '31px' }} w={{ base: '100%', md: '422px' }}>
             <FormField label="E-mail" placeholder="Digite seu e-mail" />
 
@@ -157,7 +187,6 @@ export default function CadastroForm() {
               />
             </Box>
 
-            {/* Senha */}
             <Box position="relative">
               <Flex align="center" gap="6px" mb="10px" wrap="wrap">
                 <Text fontFamily="Open Sans" fontWeight="bold" fontSize="16px" color="#222">
@@ -239,7 +268,6 @@ export default function CadastroForm() {
               )}
             </Box>
 
-            {/* Confirmar senha */}
             <Box position="relative">
               <Text fontFamily="Open Sans" fontWeight="700" fontSize="16px" mb="10px" color="#222">
                 Confirmar senha
@@ -280,7 +308,6 @@ export default function CadastroForm() {
           </Flex>
         </Flex>
 
-        {/* Botão Cadastrar */}
         <Flex justify="center" mt={4}>
           <Link href="/formcompatibilidade">
             <Button
@@ -290,7 +317,7 @@ export default function CadastroForm() {
               color="#fff"
               borderRadius="10px"
               fontFamily="Poppins"
-              fontWeight="600"
+              fontWeight={600}
               textTransform="uppercase"
               _hover={{ bg: '#BF3990' }}
             >
