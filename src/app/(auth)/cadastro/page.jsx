@@ -282,19 +282,21 @@ export default function CadastroForm() {
 
         {/* Botão Cadastrar */}
         <Flex justify="center" mt={4}>
-          <Button
-            w={{ base: '100%', md: '422px' }}
-            h="54px"
-            bg="#8D3767"
-            color="#fff"
-            borderRadius="10px"
-            fontFamily="Poppins"
-            fontWeight="600"
-            textTransform="uppercase"
-            _hover={{ bg: '#BF3990' }}
-          >
-            Cadastrar
-          </Button>
+          <Link href="/formcompatibilidade">
+            <Button
+              w={{ base: '100%', md: '422px' }}
+              h="54px"
+              bg="#8D3767"
+              color="#fff"
+              borderRadius="10px"
+              fontFamily="Poppins"
+              fontWeight="600"
+              textTransform="uppercase"
+              _hover={{ bg: '#BF3990' }}
+            >
+              Cadastrar
+            </Button>
+          </Link>
         </Flex>
       </Box>
 
