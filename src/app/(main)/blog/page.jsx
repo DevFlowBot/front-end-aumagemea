@@ -30,7 +30,6 @@ const blogCardStyle = {
   buttonStyle: {
     bg: 'white',
     color: 'black',
-    _hover: 'none',
   },
   iconStyle: {
     color: 'black',
