@@ -128,7 +128,9 @@ export function BlogCard({
           {/* Botão */}
           <Button
             bg="transparent"
-            border="1px solid transparent"
+            borderWidth="1px"
+            borderStyle="solid"
+            borderColor="transparent"
             color="#222222"
             borderRadius="full"
             position="relative"
