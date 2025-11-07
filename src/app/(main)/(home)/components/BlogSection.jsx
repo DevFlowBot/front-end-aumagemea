@@ -1,8 +1,31 @@
 'use client';
+import { omit } from 'lodash'
 
 import { Flex, Box, Text, Image, Button } from '@chakra-ui/react';
 import { Wave, BlogCard } from '@/components/commom';
 import blogData from '../../../../../fakedata/blog.json' assert { type: 'json' };
+
+const blogCardStyle = {
+  cardStyle: {
+    transition: 'all 0.3s ease',
+  },
+  imageStyle: {
+    wrapper: { borderTopRadius: 'md' },
+  },
+  descriptionStyle: {
+    color: '#222222',
+    fontFamily: 'Poppins',
+  },
+  buttonStyle: {
+    bg: '#AB678D',
+    color: '#FFFFFF',
+    _hover: { bg: '#995c7b' },
+  },
+  iconStyle: {
+    color: 'black',
+    wrapper: { bg: 'white' },
+  },
+};
 
 export function BlogSection() {
   return (
@@ -76,7 +99,7 @@ export function BlogSection() {
             zIndex={1}
           >
             {blogData.slice(0, 4).map((item, index) => (
-              <BlogCard {...item} key={index} />
+              <BlogCard {...omit(item, ['data', 'tempo_gasto_leitura'])} key={index} {...blogCardStyle} />
             ))}
           </Flex>
 

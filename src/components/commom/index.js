@@ -7,3 +7,4 @@ export * from './BlogCard';
 export * from './CardAdote';
 export * from './RenderCarousel';
 export * from './ButtonVejaMais';
+export * from './SearchInput';
