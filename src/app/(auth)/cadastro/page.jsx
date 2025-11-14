@@ -16,15 +16,12 @@ import {
 import { ViewIcon, ViewOffIcon, InfoIcon } from '@chakra-ui/icons';
 import { useState } from 'react';
 import { StyledInput, FormField } from '@/components/commom';
-
 import {
   checkPasswordStrength,
-  formatCpf,
   formatPhone,
   colorStrengthPassword,
   rulesPassword,
 } from './lib';
-
 import { Open_Sans } from 'next/font/google';
 
 const openSans = Open_Sans({
@@ -41,11 +38,11 @@ export default function CadastroForm() {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [confirmError, setConfirmError] = useState('');
 
-  const [cpf, setCpf] = useState('');
+  const [genero, setGenero] = useState('');
   const [phone, setPhone] = useState('');
   const [birthDate, setBirthDate] = useState('');
 
-  const [userType, setUserType] = useState('');
+  const [userType, setUserType] = useState('adotante');
 
   const { hasMinLength, hasNumber, hasSymbol } = rulesPassword(password);
 
@@ -81,6 +78,7 @@ export default function CadastroForm() {
           Crie sua conta
         </Heading>
 
+        {/* Botões de seleção do tipo de usuário */}
         <Flex justify="center" gap={4} mb={4} wrap="wrap">
           <Button
             onClick={() => setUserType('adotante')}
@@ -118,33 +116,64 @@ export default function CadastroForm() {
           mb={{ base: 6, md: '50px' }}
           wrap="wrap"
         >
-
+          {/* Coluna esquerda */}
           <Flex direction="column" gap={{ base: 6, md: '31px' }} w={{ base: '100%', md: '422px' }}>
-            <FormField label="Nome" placeholder="Digite seu nome" />
-            <FormField label="Sobrenome" placeholder="Digite seu sobrenome" />
+            {userType === 'adotante' && (
+              <>
+                <FormField label="Nome" placeholder="Digite seu nome" />
+                <FormField label="Sobrenome" placeholder="Digite seu sobrenome" />
+                <Box>
+                  <Text fontFamily="Open Sans" fontWeight="bold" fontSize="16px" mb="10px" color="#222">
+                    Data de nascimento
+                  </Text>
+                  <StyledInput
+                    type="date"
+                    value={birthDate}
+                    onChange={(e) => setBirthDate(e.target.value)}
+                  />
+                </Box>
+                <Box>
+                  <Text fontFamily="Open Sans" fontWeight="bold" fontSize="16px" mb="10px" color="#222">
+                    Gênero
+                  </Text>
+                  <StyledInput
+                    as="select"
+                    value={genero}
+                    onChange={(e) => setGenero(e.target.value)}
+                  >
+                    <option value="" disabled hidden>Selecione o gênero</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="outro">Outro</option>
+                    <option value="prefiroNaoInformar">Prefiro não informar</option>
+                  </StyledInput>
+                </Box>
+              </>
+            )}
 
-            <Box>
-              <Text fontFamily="Open Sans" fontWeight="bold" fontSize="16px" mb="10px" color="#222">
-                Data de nascimento
-              </Text>
-              <StyledInput
-                type="date"
-                value={birthDate}
-                onChange={(e) => setBirthDate(e.target.value)}
-              />
-            </Box>
-
-            <Box>
-              <Text fontFamily="Open Sans" fontWeight="bold" fontSize="16px" mb="10px" color="#222">
-                CPF
-              </Text>
-              <StyledInput
-                placeholder="Digite seu CPF"
-                value={cpf}
-                onChange={(e) => setCpf(formatCpf(e.target.value))}
-                maxLength={14}
-              />
-            </Box>
+            {userType === 'ong' && (
+              <>
+                <FormField label="Nome da ONG" placeholder="Digite o nome da sua ONG" />
+                <FormField label="CNPJ" placeholder="Digite o CNPJ" />
+                <FormField label="Nome do representante" placeholder="Digite o nome do representante" />
+                <Box>
+                  <Text fontFamily="Open Sans" fontWeight="bold" fontSize="16px" mb="10px" color="#222">
+                    Gênero do representante
+                  </Text>
+                  <StyledInput
+                    as="select"
+                    value={genero}
+                    onChange={(e) => setGenero(e.target.value)}
+                  >
+                    <option value="" disabled hidden>Selecione o gênero</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="outro">Outro</option>
+                    <option value="prefiroNaoInformar">Prefiro não informar</option>
+                  </StyledInput>
+                </Box>
+              </>
+            )}
 
             <Flex align="center" gap="5px" wrap="wrap">
               <Checkbox
@@ -172,6 +201,7 @@ export default function CadastroForm() {
             </Flex>
           </Flex>
 
+          {/* Coluna direita - Campos comuns */}
           <Flex direction="column" gap={{ base: 6, md: '31px' }} w={{ base: '100%', md: '422px' }}>
             <FormField label="E-mail" placeholder="Digite seu e-mail" />
 
@@ -187,6 +217,7 @@ export default function CadastroForm() {
               />
             </Box>
 
+            {/* Senha */}
             <Box position="relative">
               <Flex align="center" gap="6px" mb="10px" wrap="wrap">
                 <Text fontFamily="Open Sans" fontWeight="bold" fontSize="16px" color="#222">
@@ -243,31 +274,16 @@ export default function CadastroForm() {
               </InputGroup>
 
               {password && (
-                <Box
-                  mt={2}
-                  position={{ base: 'relative', md: 'absolute' }}
-                  w="100%"
-                  bottom={{ base: 'auto', md: '-34px' }}
-                  left={0}
-                >
-                  <Box
-                    h="5px"
-                    borderRadius="full"
-                    bg={colorStrengthPassword(passwordStrength)}
-                    transition="all 0.4s ease"
-                  />
-                  <Text
-                    fontSize="sm"
-                    mt={1}
-                    color={colorStrengthPassword(passwordStrength)}
-                    textAlign="right"
-                  >
+                <Box mt={2} position={{ base: 'relative', md: 'absolute' }} w="100%" bottom={{ base: 'auto', md: '-34px' }} left={0}>
+                  <Box h="5px" borderRadius="full" bg={colorStrengthPassword(passwordStrength)} transition="all 0.4s ease" />
+                  <Text fontSize="sm" mt={1} color={colorStrengthPassword(passwordStrength)} textAlign="right">
                     {passwordStrength || ''}
                   </Text>
                 </Box>
               )}
             </Box>
 
+            {/* Confirmar senha */}
             <Box position="relative">
               <Text fontFamily="Open Sans" fontWeight="700" fontSize="16px" mb="10px" color="#222">
                 Confirmar senha
