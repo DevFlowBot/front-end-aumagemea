@@ -169,6 +169,7 @@ export default function Login() {
                 >
                   Não tem cadastro ainda?
                 </Text>
+                <Link href="/cadastro" w="100%">
                 <Button
                   variant="outline"
                   borderColor="#222"
@@ -183,6 +184,7 @@ export default function Login() {
                 >
                   Criar uma conta
                 </Button>
+                </Link>
               </VStack>
             </VStack>
           </CardBody>
