@@ -18,8 +18,11 @@ import { useState, useEffect } from 'react';
 const links = [
   { href: '/', label: 'Início' },
   { href: '/blog', label: 'Blog' },
-  { href: '/adote', label: 'Adote' },
+  { href: '/adote', label: 'AUdote' },
   { href: '/parceiros', label: 'Parceiros' },
+  { href: '/voluntariados', label: 'Voluntariados' },
+  { href: '/eventos', label: 'Eventos' },
+
 ];
 
 export function DesktopHeader() {
