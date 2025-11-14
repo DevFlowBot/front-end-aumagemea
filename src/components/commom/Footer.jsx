@@ -13,6 +13,13 @@ import {
 } from '@chakra-ui/react';
 import { FaInstagram, FaLinkedinIn, FaGithub, FaEnvelope } from 'react-icons/fa';
 
+import { Open_Sans } from 'next/font/google';
+
+const openSans = Open_Sans({
+  weight: ['400', '600', '700'],
+  subsets: ['latin'],
+});
+
 export const Footer = () => {
   return (
     <Box
@@ -23,6 +30,7 @@ export const Footer = () => {
       pt={{ base: 8, md: 15 }}
       pb={{ base: 8, md: 25 }}
       overflow="hidden"
+      className={openSans.className}
     >
       <Flex
         maxW="1440px"
@@ -64,7 +72,7 @@ export const Footer = () => {
             Páginas
           </Text>
           <VStack align={{ base: 'center', md: 'flex-start' }} spacing={1}>
-            {['Início', 'Blog', 'Adote', 'Parceiros', 'Sobre nós'].map((item) => (
+            {['Início', 'Blog', 'AUdote', 'Parceiros', 'Sobre nós'].map((item) => (
               <Link
                 key={item}
                 fontFamily="Open Sans"
@@ -88,7 +96,7 @@ export const Footer = () => {
             Fale Conosco
           </Text>
           <VStack align={{ base: 'center', md: 'flex-start' }} spacing={1}>
-            {['Contato', 'Dúvidas Frequentes', 'Parceiros', 'ONGs'].map((item) => (
+            {['Contato', 'Dúvidas Frequentes', 'Parceiros'].map((item) => (
               <Link
                 key={item}
                 fontFamily="Open Sans"
@@ -148,7 +156,7 @@ export const Footer = () => {
                 textTransform="uppercase"
                 _hover={{ bg: 'gray.700' }}
               >
-                Enviar
+                SEU EMAIL
               </Button>
             </Flex>
           </VStack>
@@ -182,6 +190,7 @@ export const Footer = () => {
       >
         <Text
           fontFamily="Open Sans"
+          fontWeight="400"
           fontSize={{ base: '13px', md: '15px' }}
           textAlign={{ base: 'center', md: 'left' }}
         >
