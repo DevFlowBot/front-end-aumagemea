@@ -30,6 +30,7 @@ export function BlogCard({
   imagem,
   data,
   descricao,
+  subdescricao,
   link,
   tempo_gasto_leitura: tempoLeitura,
 
@@ -48,9 +49,9 @@ export function BlogCard({
 
   const hoverEffect = hover
     ? {
-        transform: 'translateY(-4px)',
-        '& *': { color: '#F29F05 !important' },
-      }
+      transform: 'translateY(-4px)',
+      '& *': { color: '#730E45 !important' },
+    }
     : undefined;
 
   return (
@@ -92,13 +93,32 @@ export function BlogCard({
 
         {/* Conteúdo */}
         <Box p={{ base: 3, sm: 4, md: 4, lg: 5 }} w="100%">
+
+          {/* Descrição */}
+          {descricao && (
+            <Text
+            color="#000"
+            fontFamily="Poppins"
+            fontWeight="600"
+            fontSize={{ base: '16px', sm: '18px', md: '20px', lg: '28px' }}
+            lineHeight={{ base: '20px', sm: '22px', md: '24px', lg: '32px' }}
+            whiteSpace="normal"
+            wordBreak="break-word"
+            mb={{ base: 2, sm: 3, md: 3, lg: 4 }}
+            transition="color 0.3s ease"
+            {...descriptionStyle}
+            >
+              {descricao}
+            </Text>
+          )}
+
           {/* Data e leitura */}
           {(dataFormatada || tempoLeitura) && (
             <Text
               mb={2}
-              color="gray.500"
-              fontFamily="Poppins"
-              fontWeight="500"
+              color="#000"
+              fontFamily="Open Sans"
+              fontWeight="400"
               fontSize={{ base: '14px', sm: '16px', md: '18px' }}
               transition="color 0.3s ease"
               {...dateStyle}
@@ -107,21 +127,16 @@ export function BlogCard({
             </Text>
           )}
 
-          {/* Descrição */}
-          {descricao && (
+          {subdescricao && (
             <Text
-              color="#222222"
-              fontFamily="Poppins"
-              fontWeight="500"
-              fontSize={{ base: '16px', sm: '18px', md: '20px', lg: '28px' }}
-              lineHeight={{ base: '20px', sm: '22px', md: '24px', lg: '32px' }}
-              whiteSpace="normal"
-              wordBreak="break-word"
-              mb={{ base: 2, sm: 3, md: 3, lg: 4 }}
-              transition="color 0.3s ease"
-              {...descriptionStyle}
+              color="#000"
+              fontFamily="Open Sans"
+              fontWeight="400"
+              fontSize={{ base: '14px', sm: '15px', md: '16px' }}
+              lineHeight={{ base: '18px', sm: '20px', md: '22px' }}
+              mb={{ base: 3, sm: 4, md: 4 }}
             >
-              {descricao}
+              {subdescricao}
             </Text>
           )}
 
@@ -149,7 +164,7 @@ export function BlogCard({
               w={{ base: '24px', sm: '28px', md: '32px' }}
               h={{ base: '24px', sm: '28px', md: '32px' }}
               bg="white"
-              color="#F29F05"
+              color="#730E45"
               borderRadius="full"
               display="flex"
               alignItems="center"
