@@ -1,0 +1,66 @@
+[
+  {
+    "imagem": "blog/blogPag/image.png",
+    "descricao": "As Vantagens de Acolher um Pet Sênior",
+    "subdescricao":"Quando pensamos em adotar, a imagem que geralmente vem à mente é a de um filhote brincalhão e cheio de energia. Eles são, sem dúvida, adoráveis.",
+    "link": "/blog/adotar-pet-senior",
+    "data": "2025-10-6",
+    "tempo_gasto_leitura": "14"
+  },
+  {
+    "imagem": "blog/blogPag/image2.png",
+    "descricao": "Check-list da Saúde: Cuidados Essenciais",
+    "subdescricao":"Ter um pet é uma fonte inesgotável de amor e alegria. Mas, junto com os pelos no sofá e os rabos abanando, vem uma grande responsabilidade: zelar pela saúde e bem-estar do seu companheiro.",
+    "link": "/blog/check-list-saude",
+    "data": "2025-10-1",
+    "tempo_gasto_leitura": "21"
+  },
+  {
+    "imagem": "blog/blogPag/image3.png",
+    "descricao": "Criar um Ambiente Divertido para seu Pet",
+    "subdescricao":"Você já chegou em casa e encontrou o rolo de papel higiênico destruído, um sapato roído ou o sofá com marcas de arranhões? Muitas vezes, esse comportamento não é birra ou vingança, mas sim um grande sinal de tédio!",
+    "link": "/blog/ambiente-divertido-pet",
+    "data": "2025-10-3",
+    "tempo_gasto_leitura": "8"
+  },
+  {
+    "imagem": "blog/blogPag/image4.png",
+    "descricao": "Pai de Pet de Primeira Viagem: Guia",
+    "subdescricao":"Seja bem-vindo ao incrível, e por vezes caótico, mundo da paternidade de pets! A decisão de abrir seu coração e seu lar para um animalzinho é um dos gestos mais nobres e recompensadores que existem.",
+    "link": "/blog/pai-pet-primeira-viagem",
+    "data": "2025-11-12",
+    "tempo_gasto_leitura": "28"
+  },
+  {
+    "imagem": "blog/blogPag/image.png",
+    "descricao": "As Vantagens de Acolher um Pet Sênior",
+    "subdescricao":"Quando pensamos em adotar, a imagem que geralmente vem à mente é a de um filhote brincalhão e cheio de energia. Eles são, sem dúvida, adoráveis.",
+    "link": "/blog/adotar-pet-senior",
+    "data": "2025-10-6",
+    "tempo_gasto_leitura": "14"
+  },
+  {
+    "imagem": "blog/blogPag/image2.png",
+    "descricao": "Check-list da Saúde: Cuidados Essenciais",
+    "subdescricao":"Ter um pet é uma fonte inesgotável de amor e alegria. Mas, junto com os pelos no sofá e os rabos abanando, vem uma grande responsabilidade: zelar pela saúde e bem-estar do seu companheiro.",
+    "link": "/blog/check-list-saude",
+    "data": "2025-10-1",
+    "tempo_gasto_leitura": "21"
+  },
+  {
+    "imagem": "blog/blogPag/image3.png",
+    "descricao": "Criar um Ambiente Divertido para seu Pet",
+    "subdescricao":"Você já chegou em casa e encontrou o rolo de papel higiênico destruído, um sapato roído ou o sofá com marcas de arranhões? Muitas vezes, esse comportamento não é birra ou vingança, mas sim um grande sinal de tédio!",
+    "link": "/blog/ambiente-divertido-pet",
+    "data": "2025-11-1",
+    "tempo_gasto_leitura": "8"
+  },
+  {
+    "imagem": "blog/blogPag/image4.png",
+    "descricao": "Pai de Pet de Primeira Viagem: Guia",
+    "subdescricao":"Seja bem-vindo ao incrível, e por vezes caótico, mundo da paternidade de pets! A decisão de abrir seu coração e seu lar para um animalzinho é um dos gestos mais nobres e recompensadores que existem.",
+    "link": "/blog/pai-pet-primeira-viagem",
+    "data": "2025-11-12",
+    "tempo_gasto_leitura": "28"
+  }
+]
